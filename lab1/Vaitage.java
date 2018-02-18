@@ -45,7 +45,7 @@ public class Vaitage {
 				System.out.println("-Calculation-");
 			km = number;
 			
-			//Визначаєм який ке-ф більше
+			//Г‚ГЁГ§Г­Г Г·Г ВєГ¬ ГїГЄГЁГ© ГЄГҐ-Гґ ГЎВіГ«ГјГёГҐ
 			kv = volume/ f.mvolume;
 			kw = weight / f.mweight;
 			double k=0;
