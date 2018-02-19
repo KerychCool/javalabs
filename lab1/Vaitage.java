@@ -14,22 +14,22 @@ public class Vaitage {
 			
 			number = 0;
 			System.out.println("----------");
-			System.out.println("Enter volume (maximum - " + f.mvolume + ")");
+			System.out.println("Enter volume (maximum - " + f.getMvolume() + ")");
 			number = numb.nextInt();
-				while(number <= 0 || number > f.mvolume) {
-					System.out.println("	Maximum volume is " + f.mvolume + ". Please enter again");
-					System.out.println("Enter volume (maximum is " + f.mvolume + ")");
+				while(number <= 0 || number > f.getMvolume()) {
+					System.out.println("	Maximum volume is " + f.getMvolume() + ". Please enter again");
+					System.out.println("Enter volume (maximum is " + f.getMvolume() + ")");
 					number = numb.nextInt();
 				}
 			volume = number;
 			System.out.println("----------");
 			
 			number = 0;
-			System.out.println("Enter weight (maximum is " + f.mweight + ")");
+			System.out.println("Enter weight (maximum is " + f.getMweight() + ")");
 			number = numb.nextInt();
-				while(number <= 0 || number > f.mweight) {
-					System.out.println("	Maximum volume is " + f.mweight + "!");
-					System.out.println("Please Enter weight (maximum - " + f.mweight + ")");
+				while(number <= 0 || number > f.getMweight()) {
+					System.out.println("	Maximum volume is " + f.getMweight() + "!");
+					System.out.println("Please Enter weight (maximum - " + f.getMweight() + ")");
 					number = numb.nextInt();
 				}
 			weight = number;
@@ -46,19 +46,14 @@ public class Vaitage {
 			km = number;
 			
 			//Âèçíà÷àºì ÿêèé êå-ô á³ëüøå
-			kv = volume/ f.mvolume;
-			kw = weight / f.mweight;
+			kv = volume/ f.getMvolume();
+			kw = weight / f.getMweight();
 			double k=0;
 				if(kv >=kw) {k = k + kv;}
 				if(kw >=kv) {k = k + kw;}
-			price = km* f.fuelconsump * f.fuelprice * k;
+			price = km* f.getFuelconsump() * f.getFuelprice() * k;
 			System.out.print("All calculated. It is worth: ");
 			System.out.printf("%.2f", price);
 			System.out.printf("UAH");
-		//System.out.println("Fura volume: " + maxfura.getVolume());
-		//System.out.println("Fura weight: " + maxfura.getWeight());
-		//System.out.println("Calculated: ");
-		//System.out.println("It will cost: " + calculate);
 }
-	//public static int Calculate (int calculate) {return calculate;}
 }
