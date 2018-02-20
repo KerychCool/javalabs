@@ -21,7 +21,7 @@ public class Main {
             foursquare f = new foursquare();
             Prism p = new Prism();
         
-        System.out.println("Suare is: " + f.getSquare());
-        System.out.println("Volume is: " + p.getVolume());
+        System.out.println("Foursquare is: " + f.getSquare());
+        System.out.println("Prism square is: " + p.getSquare());
     }
 }
